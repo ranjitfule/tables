@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The Table Demo - With Different Styles</title>
+	<style type="text/css">
+		#t2, #t2 td, #t2 th{
+			border: 1px solid gray;
+			border-collapse: collapse;
+		}
+
+		#t3, #t3 td, #t3 th{
+			border: 1px solid gray;
+			border-collapse: collapse;
+		}
+		p{ font-size: 140%; }
+		#t3{
+
+		}
+		#t3 tr:first-child{
+			background-color: black;
+			color: white;
+		} 
+
+		#t4, #t4 td, #t4 th{
+			border: 1px solid #fefefe;
+			border-collapse: collapse;
+		}
+		#t4 tr:first-child{
+			background-color: #0089ff;
+			color: white;
+		}
+		#t4 th{
+			text-align: left;
+		}
+		#t4 td, #t4 th{
+			padding: 5px 10px;
+		}
+		#t4{
+			border-radius: 4px;
+			background-color: skyblue;
+		}
+		#t5{background-color: #f9f9f9;}
+		#t5, #t5 td, #t5 th{
+			border: 1px solid #cdcdcd;
+			border-collapse: collapse;
+		}
+		#t5 th{
+			background-color: black;
+			color: white;
+			text-align: left;
+		}
+
+		#t5 th, #t5 td{
+			padding: 8px 16px;
+		}
+
+		#t5 tr:nth-child(odd){
+			background-color: #dbdbdb;
+		}
+
+		#t6{background-color: #f9f9f9;}
+		#t6, #t6 td, #t6 th{
+			border: 1px solid #cdcdcd;
+			border-collapse: collapse;
+		}
+		#t6 th{
+			background-color: black;
+			color: white;
+			text-align: left;
+		}
+
+		#t6 th, #t6 td{
+			padding: 8px 16px;
+		}
+
+		#t6 tr:hover{
+			background-color: #e9e9e9;
+			color: black;
+		}
+		#t7{background-color: #f9f9f9;}
+		#t7, #t7 td, #t7 th{
+			border: 1px solid #cdcdcd;
+			border-collapse: collapse;
+		}
+		#t7 th{
+			background-color: black;
+			color: white;
+			text-align: left;
+		}
+
+		#t7 th, #t7 td{
+			padding: 8px 16px;
+		}
+
+		#t7 tr th:nth-child(odd){
+			background-color: skyblue;
+			color: white;
+		}
+
+	</style>
+</head>
+<body>
+
+	<h1>A table without style</h1>
+	<p>The table without any style</p>
+	<table id="t1">
+		<tr>
+			<th>Full Name</th>
+			<th>Age</th>
+			<th>Job Title</th>
+			<th>Location</th>
+		</tr>
+		<tr>
+			<td>Vincent Paul</td>
+			<td>31</td>
+			<td>iOS Developer</td>
+			<td>Washington</td>
+		</tr>
+		<tr>
+			<td>Tylor Reyes</td>
+			<td>22</td>
+			<td>UI/UX Designer</td>
+			<td>New York</td>
+		</tr>
+		<tr>
+			<td>Justin Black</td>
+			<td>28</td>
+			<td>Front-End Developer</td>
+			<td>Los Angeles</td>
+		</tr>
+		<tr>
+			<td>Sean Guzman</td>
+			<td>25</td>
+			<td>Web Designer</td>
+			<td>San Francisco</td>
+		</tr>
+		<tr>
+			<td>Keith Carter</td>
+			<td>20</td>
+			<td>Graphic Designer</td>
+			<td>New York, NY</td>
+		</tr>
+		<tr>
+			<td>Austin Medina</td>
+			<td>32</td>
+			<td>Photographer</td>
+			<td>New York</td>
+		</tr>
+		<tr>
+			<td>Adam Henderson</td>
+			<td>35</td>
+			<td>UI/UX Designer</td>
+			<td>Washington</td>
+		</tr>
+		<tr>
+			<td>Louis Smith</td>
+			<td>27</td>
+			<td>Photographer</td>
+			<td>San Francisco</td>
+		</tr>
+	</table>
+
+	<br>
+	<hr>
+	<br>
+	<h1>A table - With Border</h1>
+	<p>The table contains border for all its children.</p>
+	<table id="t2">
+		<tr>
+			<th>Full Name</th>
+			<th>Age</th>
+			<th>Job Title</th>
+			<th>Location</th>
+		</tr>
+		<tr>
+			<td>Vincent Paul</td>
+			<td>31</td>
+			<td>iOS Developer</td>
+			<td>Washington</td>
+		</tr>
+		<tr>
+			<td>Tylor Reyes</td>
+			<td>22</td>
+			<td>UI/UX Designer</td>
+			<td>New York</td>
+		</tr>
+		<tr>
+			<td>Justin Black</td>
+			<td>28</td>
+			<td>Front-End Developer</td>
+			<td>Los Angeles</td>
+		</tr>
+		<tr>
+			<td>Sean Guzman</td>
+			<td>25</td>
+			<td>Web Designer</td>
+			<td>San Francisco</td>
+		</tr>
+		<tr>
+			<td>Keith Carter</td>
+			<td>20</td>
+			<td>Graphic Designer</td>
+			<td>New York, NY</td>
+		</tr>
+		<tr>
+			<td>Austin Medina</td>
+			<td>32</td>
+			<td>Photographer</td>
+			<td>New York</td>
+		</tr>
+		<tr>
+			<td>Adam Henderson</td>
+			<td>35</td>
+			<td>UI/UX Designer</td>
+			<td>Washington</td>
+		</tr>
+		<tr>
+			<td>Louis Smith</td>
+			<td>27</td>
+			<td>Photographer</td>
+			<td>San Francisco</td>
+		</tr>
+	</table>
+
+	<br>
+	<hr>
+	<br>
+	<h1>A table - With Header</h1>
+	<p>The table contains heading color.</p>
+	<table id="t3">
+		<tr>
+			<th>Full Name</th>
+			<th>Age</th>
+			<th>Job Title</th>
+			<th>Location</th>
+		</tr>
+		<tr>
+			<td>Vincent Paul</td>
+			<td>31</td>
+			<td>iOS Developer</td>
+			<td>Washington</td>
+		</tr>
+		<tr>
+			<td>Tylor Reyes</td>
+			<td>22</td>
+			<td>UI/UX Designer</td>
+			<td>New York</td>
+		</tr>
+		<tr>
+			<td>Justin Black</td>
+			<td>28</td>
+			<td>Front-End Developer</td>
+			<td>Los Angeles</td>
+		</tr>
+		<tr>
+			<td>Sean Guzman</td>
+			<td>25</td>
+			<td>Web Designer</td>
+			<td>San Francisco</td>
+		</tr>
+		<tr>
+			<td>Keith Carter</td>
+			<td>20</td>
+			<td>Graphic Designer</td>
+			<td>New York, NY</td>
+		</tr>
+		<tr>
+			<td>Austin Medina</td>
+			<td>32</td>
+			<td>Photographer</td>
+			<td>New York</td>
+		</tr>
+		<tr>
+			<td>Adam Henderson</td>
+			<td>35</td>
+			<td>UI/UX Designer</td>
+			<td>Washington</td>
+		</tr>
+		<tr>
+			<td>Louis Smith</td>
+			<td>27</td>
+			<td>Photographer</td>
+			<td>San Francisco</td>
+		</tr>
+	</table>
+
+	<br>
+	<hr>
+	<br>
+	<h1>A table - With Border</h1>
+	<p>The Fancy tables</p>
+	<table id="t4">
+		<tr>
+			<th>Full Name</th>
+			<th>Age</th>
+			<th>Job Title</th>
+			<th>Location</th>
+		</tr>
+		<tr>
+			<td>Vincent Paul</td>
+			<td>31</td>
+			<td>iOS Developer</td>
+			<td>Washington</td>
+		</tr>
+		<tr>
+			<td>Tylor Reyes</td>
+			<td>22</td>
+			<td>UI/UX Designer</td>
+			<td>New York</td>
+		</tr>
+		<tr>
+			<td>Justin Black</td>
+			<td>28</td>
+			<td>Front-End Developer</td>
+			<td>Los Angeles</td>
+		</tr>
+		<tr>
+			<td>Sean Guzman</td>
+			<td>25</td>
+			<td>Web Designer</td>
+			<td>San Francisco</td>
+		</tr>
+		<tr>
+			<td>Keith Carter</td>
+			<td>20</td>
+			<td>Graphic Designer</td>
+			<td>New York, NY</td>
+		</tr>
+		<tr>
+			<td>Austin Medina</td>
+			<td>32</td>
+			<td>Photographer</td>
+			<td>New York</td>
+		</tr>
+		<tr>
+			<td>Adam Henderson</td>
+			<td>35</td>
+			<td>UI/UX Designer</td>
+			<td>Washington</td>
+		</tr>
+		<tr>
+			<td>Louis Smith</td>
+			<td>27</td>
+			<td>Photographer</td>
+			<td>San Francisco</td>
+		</tr>
+	</table>
+
+	<br>
+	<hr>
+	<br>
+	<h1>A table - Striped Rows</h1>
+	<p>The table contains Stripped rows</p>
+	<table id="t5">
+		<tr>
+			<th>Full Name</th>
+			<th>Age</th>
+			<th>Job Title</th>
+			<th>Location</th>
+		</tr>
+		<tr>
+			<td>Vincent Paul</td>
+			<td>31</td>
+			<td>iOS Developer</td>
+			<td>Washington</td>
+		</tr>
+		<tr>
+			<td>Tylor Reyes</td>
+			<td>22</td>
+			<td>UI/UX Designer</td>
+			<td>New York</td>
+		</tr>
+		<tr>
+			<td>Justin Black</td>
+			<td>28</td>
+			<td>Front-End Developer</td>
+			<td>Los Angeles</td>
+		</tr>
+		<tr>
+			<td>Sean Guzman</td>
+			<td>25</td>
+			<td>Web Designer</td>
+			<td>San Francisco</td>
+		</tr>
+		<tr>
+			<td>Keith Carter</td>
+			<td>20</td>
+			<td>Graphic Designer</td>
+			<td>New York, NY</td>
+		</tr>
+		<tr>
+			<td>Austin Medina</td>
+			<td>32</td>
+			<td>Photographer</td>
+			<td>New York</td>
+		</tr>
+		<tr>
+			<td>Adam Henderson</td>
+			<td>35</td>
+			<td>UI/UX Designer</td>
+			<td>Washington</td>
+		</tr>
+		<tr>
+			<td>Louis Smith</td>
+			<td>27</td>
+			<td>Photographer</td>
+			<td>San Francisco</td>
+		</tr>
+	</table>
+
+	<br>
+	<hr>
+	<br>
+	<h1>A table - Different Coloured Coloum Headers </h1>
+	<p>The table containt coloums with different colors</p>
+	<table id="t7">
+		<tr>
+			<th>Full Name</th>
+			<th>Age</th>
+			<th>Job Title</th>
+			<th>Location</th>
+		</tr>
+		<tr>
+			<td>Vincent Paul</td>
+			<td>31</td>
+			<td>iOS Developer</td>
+			<td>Washington</td>
+		</tr>
+		<tr>
+			<td>Tylor Reyes</td>
+			<td>22</td>
+			<td>UI/UX Designer</td>
+			<td>New York</td>
+		</tr>
+		<tr>
+			<td>Justin Black</td>
+			<td>28</td>
+			<td>Front-End Developer</td>
+			<td>Los Angeles</td>
+		</tr>
+		<tr>
+			<td>Sean Guzman</td>
+			<td>25</td>
+			<td>Web Designer</td>
+			<td>San Francisco</td>
+		</tr>
+		<tr>
+			<td>Keith Carter</td>
+			<td>20</td>
+			<td>Graphic Designer</td>
+			<td>New York, NY</td>
+		</tr>
+		<tr>
+			<td>Austin Medina</td>
+			<td>32</td>
+			<td>Photographer</td>
+			<td>New York</td>
+		</tr>
+		<tr>
+			<td>Adam Henderson</td>
+			<td>35</td>
+			<td>UI/UX Designer</td>
+			<td>Washington</td>
+		</tr>
+		<tr>
+			<td>Louis Smith</td>
+			<td>27</td>
+			<td>Photographer</td>
+			<td>San Francisco</td>
+		</tr>
+	</table>
+
+	<br>
+	<hr>
+	<br>
+	<h1>A table - Hovering </h1>
+	<p>The table contains Hovering effect</p>
+	<table id="t6">
+		<tr>
+			<th>Full Name</th>
+			<th>Age</th>
+			<th>Job Title</th>
+			<th>Location</th>
+		</tr>
+		<tr>
+			<td>Vincent Paul</td>
+			<td>31</td>
+			<td>iOS Developer</td>
+			<td>Washington</td>
+		</tr>
+		<tr>
+			<td>Tylor Reyes</td>
+			<td>22</td>
+			<td>UI/UX Designer</td>
+			<td>New York</td>
+		</tr>
+		<tr>
+			<td>Justin Black</td>
+			<td>28</td>
+			<td>Front-End Developer</td>
+			<td>Los Angeles</td>
+		</tr>
+		<tr>
+			<td>Sean Guzman</td>
+			<td>25</td>
+			<td>Web Designer</td>
+			<td>San Francisco</td>
+		</tr>
+		<tr>
+			<td>Keith Carter</td>
+			<td>20</td>
+			<td>Graphic Designer</td>
+			<td>New York, NY</td>
+		</tr>
+		<tr>
+			<td>Austin Medina</td>
+			<td>32</td>
+			<td>Photographer</td>
+			<td>New York</td>
+		</tr>
+		<tr>
+			<td>Adam Henderson</td>
+			<td>35</td>
+			<td>UI/UX Designer</td>
+			<td>Washington</td>
+		</tr>
+		<tr>
+			<td>Louis Smith</td>
+			<td>27</td>
+			<td>Photographer</td>
+			<td>San Francisco</td>
+		</tr>
+	</table>
+
+	<br>
+	<hr>
+	<br>
+
+
+
+</body>
+</html>
